@@ -14,7 +14,8 @@ class Scoreboard(Turtle):
         self.hideturtle()
 
     def update_scoreboard(self):
-        self.write(f"Score: {self.score}", align=ALIGN, font=FONT)
+        self.clear()
+        self.write(f"Score: {self.score}  High Score:{self.high_score}", align=ALIGN, font=FONT)
 
     def increase_score(self):
         self.score += 1
